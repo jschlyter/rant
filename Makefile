@@ -1,2 +1,5 @@
+CFLAGS=	-std=c89 -Wno-implicit-function-declaration
+
+
 rant: rant.c
-	cc -std=c89 -Wno-implicit-function-declaration -o $@ $<
+	cc $(CFLAGS) -o $@ $<
